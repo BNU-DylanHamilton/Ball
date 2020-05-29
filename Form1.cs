@@ -135,6 +135,10 @@ namespace Ball
                 yOneSize -= 5;
                 return true;
             }
+            else if(input == "C")
+            {
+                displayPictureBox.BackColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+            }
 
             return false;    // return true if key processed, otherwise false
         }
